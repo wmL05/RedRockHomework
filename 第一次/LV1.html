@@ -48,6 +48,9 @@
         border: 0px;
         border-radius: 4px;
         cursor: pointer;
+        outline: none;
+        /*修正1*/
+        /* 对于很多元素来说，如果没有设置样式，轮廓是不可见的。因为样式（style）的默认值是 none。但 input 元素是例外，其样式默认值由浏览器决定。 */
     }
 
     .denglu:hover {
@@ -85,6 +88,9 @@
         border: 2px solid #4e6ef2;
         padding: 12px 87px 12px 16px;
         border-radius: 10px 0 0 10px;
+        outline: none;
+        /*修正2*/
+        /* 这一行代码是为了点击输入时不显示那个黑色的框 */
     }
 
     .anniu {
@@ -126,6 +132,8 @@
 
     h3 {
         line-height: 10px;
+        text-align: center;
+        /*修正3*/
     }
 
     .sou {
@@ -139,6 +147,11 @@
         line-height: 30px;
         color: #55585a;
         font-weight: 400;
+    }
+
+    h5 {
+        text-align: center;
+        /*修正3*/
     }
 </style>
 
@@ -182,10 +195,15 @@
 
     <div class="erweima"></div>
 
-    <h3 align="center">扫描二维码，下载百度app</h3>
-    <h3 align="center" class="sou">有事搜一搜，没事看一看</h3>
+    <!--    <h3 align="center">扫描二维码，下载百度app</h3>
+            <h3 align="center" class="sou">有事搜一搜，没事看一看</h3>    （原）-->
+    <h3>扫描二维码，下载百度app</h3>
+    <h3 class="sou">有事搜一搜，没事看一看</h3> <!--修正3-->
 
-    <h5 align="center">
+    <!--    不是很建议直接在这上面写 align: center ，在css那里用 text-align: center 更好-->
+
+    <!-- <h5 align="center"> -->
+    <h5><!--修正3-->
         <a href="#" class="xiaolianjie">把百度作为首页</a>
         <a href="#" class="xiaolianjie">关于百度</a>
         <a href="#" class="xiaolianjie">About Baidu</a>
