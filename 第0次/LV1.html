@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第0次LV1</title>
+</head>
+<style>
+    div {
+        height: 100px;
+        width: 120px;
+        background-color: pink;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+</style>
+
+<body>
+    <h2>这是二级标签，自带加粗</h2>
+    <p>这是一个p标签，不加粗</p>
+    <h3>这是三级标签</h3>
+    <p>牛马，是一种境界</p>
+    <img src="../cencen.png" title="岑岑：我是牛马">
+    <div>
+        我是一个宽120px高100px的粉色盒子
+    </div>
+    <a href="https://www.baidu.com/" target="_blank">点击跳转百度页面</a>
+    <li>我</li>
+    <li>是</li>
+    <li>无</li>
+    <li>序</li>
+    <li>列</li>
+    <li>表</li>
+    </ul>
+    <hr />
+    <form><!--表单-->
+        <tr>
+            <td>
+                <input type="text" style="width:300px" value="宽300px的输入框" />
+            </td>
+            <td>
+                <input type="button" value="无用按钮" />
+            </td>
+        </tr>
+    </form>
+    <table border="1" cellspacing="0" width="400px" height="40px"><!--表格-->
+        <thead>
+            <tr>
+                <td align="center">用户名：</td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">密码：</td>
+                <td>
+                    <input type="password" maxlength="6" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="提交" />
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <form>
+        <table>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="sex" id="nan">
+                    <lable for="nan">男</lable>
+                    <input type="radio" name="sex" id="nv">
+                    <lable for="nv">女</lable>
+                </td>
+            </tr>
+            <tr>
+                <td>学院：</td>
+                <td>
+                    <select>
+                        <option>软件工程</option>
+                        <option>通信与信息工程</option>
+                        <option>光电半导体</option>
+                        <option>经济管理</option>
+                        <option>计算机</option>
+                        <option>外国语</option>
+                        <option>生信</option>
+                        <option>网安</option>
+                        <option>自动化</option>
+                        <option>体育学院</option>
+                        <option>理学院</option>
+                        <option>传媒</option>
+                        <option>先进制造</option>
+                        <option>国际学院</option>
+                        <option>教育</option>
+                        <option>现代邮政</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>爱好：</td>
+                <td><input type="checkbox" name="hobby">吃饭
+                    <input type="checkbox" name="hobby">睡觉
+                    <input type="checkbox" name="hobby">玩游戏
+                </td>
+            </tr>
+            <tr>
+                <td>目标：</td>
+                <td>
+                    <textarea>
+
+                    </textarea>
+                </td>
+            </tr>
+    </form>
+
+</body>
+
+</html>
