@@ -29,55 +29,65 @@
         我是一个宽120px高100px的粉色盒子
     </div>
     <a href="https://www.baidu.com/" target="_blank">点击跳转百度页面</a>
-    <li>我</li>
-    <li>是</li>
-    <li>无</li>
-    <li>序</li>
-    <li>列</li>
-    <li>表</li>
+    <ul><!--遗漏补充-->
+        <li>我</li>
+        <li>是</li>
+        <li>无</li>
+        <li>序</li>
+        <li>列</li>
+        <li>表</li>
     </ul>
     <hr />
     <form><!--表单-->
-        <tr>
-            <td>
-                <input type="text" style="width:300px" value="宽300px的输入框" />
-            </td>
-            <td>
-                <input type="button" value="无用按钮" />
-            </td>
-        </tr>
+        <!-- <tr> -->
+        <!-- <td> -->
+        <input type="text" style="width:300px" value="宽300px的输入框" />
+        <!-- </td> -->
+        <!-- <td> -->
+        <input type="button" value="无用按钮" />
+        <!-- </td> -->
+        <!-- </tr> -->
+        <!-- <tr> <td> 用于表格元素中 -->
     </form>
-    <table border="1" cellspacing="0" width="400px" height="40px"><!--表格-->
-        <thead>
-            <tr>
-                <td align="center">用户名：</td>
-                <td>
-                    <input type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td align="center">密码：</td>
-                <td>
-                    <input type="password" maxlength="6" />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="提交" />
-                    <input type="reset" value="重置">
-                </td>
-            </tr>
-        </thead>
-    </table>
+    <form>
+        <table border="1" cellspacing="0" width="400px" height="40px"><!--表格-->
+            <thead>
+                <tr>
+                    <!-- <td align="center">用户名：</td> -->
+                    <td style="text-align: center">用户名：</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td align="center">密码：</td> -->
+                    <td style="text-align: center">密码：</td>
+                    <td>
+                        <input type="password" maxlength="6" />
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td colspan="2" align="center"> -->
+                    <td colspan="2" style="text-align: center">
+                        <input type="submit" value="提交" />
+                        <input type="reset" value="重置">
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </form>
+    <!-- 52-78行这里也可以用form，这样提交重置按钮也会生效 -->
     <form>
         <table>
             <tr>
                 <td>性别：</td>
                 <td>
                     <input type="radio" name="sex" id="nan">
-                    <lable for="nan">男</lable>
+                    <!-- <lable for="nan">男</lable> -->
+                    <label for="nan">男</label><!--拼写错误-->
                     <input type="radio" name="sex" id="nv">
-                    <lable for="nv">女</lable>
+                    <!-- <lable for="nv">女</lable> -->
+                    <label for="nv">女</label>
                 </td>
             </tr>
             <tr>
@@ -118,6 +128,7 @@
                     </textarea>
                 </td>
             </tr>
+        </table><!--遗漏补充-->
     </form>
 
 </body>
